@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/cheb/Documents/Code/CPP/RayTracer/build",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -o CMakeFiles/RayTracer.dir/main.cpp.o -c /home/cheb/Documents/Code/CPP/RayTracer/main.cpp",
+  "file": "/home/cheb/Documents/Code/CPP/RayTracer/main.cpp",
+  "output": "CMakeFiles/RayTracer.dir/main.cpp.o"
+}
+]

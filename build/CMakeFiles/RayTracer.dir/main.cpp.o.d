@@ -1,9 +1,9 @@
 CMakeFiles/RayTracer.dir/main.cpp.o: \
  /home/cheb/Documents/Code/CPP/RayTracer/main.cpp \
  /usr/include/stdc-predef.h \
- /home/cheb/Documents/Code/CPP/RayTracer/color.h \
- /home/cheb/Documents/Code/CPP/RayTracer/vec3.h /usr/include/c++/13/cmath \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /home/cheb/Documents/Code/CPP/RayTracer/src/color.h \
+ /home/cheb/Documents/Code/CPP/RayTracer/src/vec3.h \
+ /usr/include/c++/13/cmath /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -180,4 +180,5 @@ CMakeFiles/RayTracer.dir/main.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc
+ /usr/include/c++/13/bits/istream.tcc \
+ /home/cheb/Documents/Code/CPP/RayTracer/src/ray.h
