@@ -1,4 +1,5 @@
-#pragma once
+#ifndef UTIL_H
+#define UTIL_H
 
 #include <cmath>
 #include <iostream>
@@ -24,3 +25,6 @@ inline double degrees_to_radians(double degrees) {
 #include "color.h"
 #include "ray.h"
 #include "vec3.h"
+
+
+#endif
