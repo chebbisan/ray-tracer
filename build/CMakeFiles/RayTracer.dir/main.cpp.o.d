@@ -238,6 +238,8 @@ CMakeFiles/RayTracer.dir/main.cpp.o: \
  /home/cheb/Documents/Code/CPP/RayTracer/src/ray.h \
  /home/cheb/Documents/Code/CPP/RayTracer/src/camera.h \
  /home/cheb/Documents/Code/CPP/RayTracer/src/hittable.h \
+ /home/cheb/Documents/Code/CPP/RayTracer/src/material.h \
  /home/cheb/Documents/Code/CPP/RayTracer/src/hittable.h \
  /home/cheb/Documents/Code/CPP/RayTracer/src/hittable_list.h \
- /home/cheb/Documents/Code/CPP/RayTracer/src/sphere.h
+ /home/cheb/Documents/Code/CPP/RayTracer/src/sphere.h \
+ /home/cheb/Documents/Code/CPP/RayTracer/src/material.h

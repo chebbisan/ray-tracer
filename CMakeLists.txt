@@ -15,4 +15,5 @@ add_executable(
     src/util.h
     src/interval.h
     src/camera.h
+    src/material.h
 )

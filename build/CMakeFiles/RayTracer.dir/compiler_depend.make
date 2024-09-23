@@ -7,6 +7,7 @@ CMakeFiles/RayTracer.dir/main.cpp.o: /home/cheb/Documents/Code/CPP/RayTracer/mai
   /home/cheb/Documents/Code/CPP/RayTracer/src/hittable.h \
   /home/cheb/Documents/Code/CPP/RayTracer/src/hittable_list.h \
   /home/cheb/Documents/Code/CPP/RayTracer/src/interval.h \
+  /home/cheb/Documents/Code/CPP/RayTracer/src/material.h \
   /home/cheb/Documents/Code/CPP/RayTracer/src/ray.h \
   /home/cheb/Documents/Code/CPP/RayTracer/src/sphere.h \
   /home/cheb/Documents/Code/CPP/RayTracer/src/util.h \
@@ -332,6 +333,8 @@ CMakeFiles/RayTracer.dir/main.cpp.o: /home/cheb/Documents/Code/CPP/RayTracer/mai
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
 /usr/include/c++/13/iostream:
 
 /usr/include/c++/13/ext/type_traits.h:
@@ -474,6 +477,10 @@ CMakeFiles/RayTracer.dir/main.cpp.o: /home/cheb/Documents/Code/CPP/RayTracer/mai
 
 /usr/include/c++/13/bits/random.h:
 
+/usr/include/c++/13/bits/ptr_traits.h:
+
+/usr/include/c++/13/bits/ranges_uninitialized.h:
+
 /usr/include/c++/13/bits/streambuf.tcc:
 
 /usr/include/c++/13/bits/specfun.h:
@@ -487,16 +494,6 @@ CMakeFiles/RayTracer.dir/main.cpp.o: /home/cheb/Documents/Code/CPP/RayTracer/mai
 /usr/include/c++/13/bits/basic_ios.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/c++/13/bits/atomic_lockfree_defines.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/c++/13/ext/numeric_traits.h:
-
-/usr/include/c++/13/bits/stl_iterator.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/include/c++/13/ext/alloc_traits.h:
 
@@ -520,6 +517,18 @@ CMakeFiles/RayTracer.dir/main.cpp.o: /home/cheb/Documents/Code/CPP/RayTracer/mai
 
 /usr/include/c++/13/bits/iterator_concepts.h:
 
+/usr/include/c++/13/backward/auto_ptr.h:
+
+/usr/include/c++/13/bits/atomic_lockfree_defines.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/c++/13/ext/numeric_traits.h:
+
+/usr/include/c++/13/bits/stl_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
 /usr/include/c++/13/bits/allocated_ptr.h:
 
 /usr/include/c++/13/bit:
@@ -529,8 +538,6 @@ CMakeFiles/RayTracer.dir/main.cpp.o: /home/cheb/Documents/Code/CPP/RayTracer/mai
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /home/cheb/Documents/Code/CPP/RayTracer/src/hittable_list.h:
-
-/usr/include/c++/13/backward/auto_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
@@ -574,9 +581,7 @@ CMakeFiles/RayTracer.dir/main.cpp.o: /home/cheb/Documents/Code/CPP/RayTracer/mai
 
 /usr/include/c++/13/cwctype:
 
-/usr/include/c++/13/bits/ranges_uninitialized.h:
-
-/usr/include/c++/13/bits/ptr_traits.h:
+/home/cheb/Documents/Code/CPP/RayTracer/src/util.h:
 
 /usr/include/alloca.h:
 
@@ -587,8 +592,6 @@ CMakeFiles/RayTracer.dir/main.cpp.o: /home/cheb/Documents/Code/CPP/RayTracer/mai
 /home/cheb/Documents/Code/CPP/RayTracer/src/hittable.h:
 
 /usr/include/features-time64.h:
-
-/home/cheb/Documents/Code/CPP/RayTracer/src/util.h:
 
 /usr/include/c++/13/bits/locale_facets.h:
 
@@ -627,8 +630,6 @@ CMakeFiles/RayTracer.dir/main.cpp.o: /home/cheb/Documents/Code/CPP/RayTracer/mai
 /usr/include/c++/13/bits/exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/c++/13/bits/exception_ptr.h:
 
@@ -803,6 +804,8 @@ CMakeFiles/RayTracer.dir/main.cpp.o: /home/cheb/Documents/Code/CPP/RayTracer/mai
 /usr/include/c++/13/string_view:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/home/cheb/Documents/Code/CPP/RayTracer/src/material.h:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
