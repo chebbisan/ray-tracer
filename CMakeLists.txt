@@ -13,4 +13,5 @@ add_executable(
     src/sphere.h
     src/hittable_list.h
     src/util.h
+    src/interval.h
 )
