@@ -14,4 +14,5 @@ add_executable(
     src/hittable_list.h
     src/util.h
     src/interval.h
+    src/camera.h
 )
