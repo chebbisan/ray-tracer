@@ -17,3 +17,5 @@ add_executable(
     src/camera.h
     src/material.h
 )
+
+add_compile_options(-fsanitize=thread)

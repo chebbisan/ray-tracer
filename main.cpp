@@ -36,7 +36,7 @@ int main() {
     cam.defocus_angle = 10.0;
     cam.focus_dist = 3.4;
 
-    cam.render(world);
+    cam.thread_render(world, 4);
 
     return 0;
 }

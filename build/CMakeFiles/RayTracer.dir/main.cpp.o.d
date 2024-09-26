@@ -231,7 +231,11 @@ CMakeFiles/RayTracer.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
  /usr/include/c++/13/bits/random.tcc /usr/include/c++/13/numeric \
  /usr/include/c++/13/bits/stl_numeric.h \
- /usr/include/c++/13/pstl/glue_numeric_defs.h \
+ /usr/include/c++/13/pstl/glue_numeric_defs.h /usr/include/c++/13/fstream \
+ /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+ /usr/include/c++/13/bits/fstream.tcc \
  /home/cheb/Documents/Code/CPP/RayTracer/src/color.h \
  /home/cheb/Documents/Code/CPP/RayTracer/src/vec3.h \
  /home/cheb/Documents/Code/CPP/RayTracer/src/interval.h \
@@ -239,6 +243,15 @@ CMakeFiles/RayTracer.dir/main.cpp.o: \
  /home/cheb/Documents/Code/CPP/RayTracer/src/camera.h \
  /home/cheb/Documents/Code/CPP/RayTracer/src/hittable.h \
  /home/cheb/Documents/Code/CPP/RayTracer/src/material.h \
+ /usr/include/c++/13/thread /usr/include/c++/13/stop_token \
+ /usr/include/c++/13/atomic /usr/include/c++/13/bits/std_thread.h \
+ /usr/include/c++/13/semaphore /usr/include/c++/13/bits/semaphore_base.h \
+ /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
+ /usr/include/c++/13/ctime /usr/include/c++/13/bits/parse_numbers.h \
+ /usr/include/c++/13/bits/atomic_timed_wait.h \
+ /usr/include/c++/13/bits/this_thread_sleep.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h \
  /home/cheb/Documents/Code/CPP/RayTracer/src/hittable.h \
  /home/cheb/Documents/Code/CPP/RayTracer/src/hittable_list.h \
  /home/cheb/Documents/Code/CPP/RayTracer/src/sphere.h \

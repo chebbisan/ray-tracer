@@ -4,6 +4,10 @@
 #include "hittable.h"
 #include "material.h"
 
+#include <thread>
+#include <atomic>
+
+
 class camera {
 public:
     double aspect_ratio = 1.0;  // Ratio of image width over height
@@ -33,11 +37,49 @@ public:
                     ray r = get_ray(i, j);
                     pixel_color += ray_color(r, max_depth, world);
                 }
-                write_color(std::cout, pixel_samples_scale * pixel_color );
+                write_color(std::cout, pixel_samples_scale * pixel_color);
             }
         }
 
         std::clog << "\rDone.                 \n";
+    }
+
+    void thread_render(const hittable& world, int num_threads) {
+        initialize();
+        int size = image_height;
+        int chunk_size = size / num_threads;
+
+        std::vector<std::string> data(image_height * image_width);
+        std::vector<std::thread> threads;
+
+        for (int i = 0; i < num_threads; ++i) {
+            int start = i * chunk_size;
+            int end = i == num_threads - 1 ? size : start + chunk_size;
+
+            threads.emplace_back(&camera::thread_write, this, start, end, std::ref(world), std::ref(data));
+        }
+
+        for (auto& thread : threads) thread.join();
+
+        write_to_file("../images/thread.ppm", data, image_width, image_height);
+
+        std::clog << "\rDone.                 \n";
+    }
+
+    void thread_write(int start, int end, const hittable& world,
+    std::vector<std::string>& data) {
+        for (int j = start; j < end; ++j) {
+            std::clog << "\rScanlines remaining: " << remain << ' ' << std::flush;
+            for (int i = 0; i < image_width; ++i) {
+                color pixel_color = color(0, 0, 0);
+                for(int sample = 0; sample < samples_per_pixel; ++sample) {
+                    ray r = get_ray(i, j);
+                    pixel_color += ray_color(r, max_depth, world);
+                }
+                write_color(data, j * image_width + i, pixel_color * pixel_samples_scale);
+            }
+            --remain;
+        }
     }
 
 private:
@@ -49,10 +91,13 @@ private:
     vec3   pixel_delta_v;  // Offset to pixel below
     vec3 u, v, w;
     vec3 defocus_disk_u, defocus_disk_v;
+    std::atomic<int> remain;
 
     void initialize() {
         image_height = int(image_width / aspect_ratio);
         image_height = (image_height < 1) ? 1 : image_height;
+
+        remain = image_height;
 
         pixel_samples_scale = 1. / samples_per_pixel;
 
@@ -87,7 +132,7 @@ private:
         defocus_disk_v = v * defocus_radius;
     }
 
-    color ray_color(const ray& r, int depth, const hittable& world) const {
+        color ray_color(const ray& r, int depth, const hittable& world) const {
         if (depth <= 0) return color(0., 0., 0.);
 
         hit_record rec;
